@@ -1,0 +1,66 @@
+*{
+	font-family: Lato, sans-serif;
+}
+div{
+	border: grey dotted 1px;
+}
+#details div{
+  display:block !important;
+}
+#weatherdisplay div{
+  display:inline-block;
+  max-width: 400px;
+  }
+#weatherdetails{
+	max-width:75%;
+}
+#temp{
+  font-size:75px;
+  font-weight: 700;
+}
+.location{
+  font-size: 26px;
+  display: block !important;
+  max-width: 500px !important;
+  margin: auto;
+}
+body{
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #210070, #5ad8f8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #210070, #5ad8f8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #210070, #5ad8f8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #210070, #5ad8f8); /* Standard syntax */
+}
+h1{
+	color:white !important;
+	letter-spacing: 4px;
+	font-size:3.6em;
+	font-family: Lobster, cursive;
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: 200;
+	color:white;
+}
+header div{
+	display:inline;
+}
+#weatherdisplay{
+	max-width: 75%;
+	margin: auto;
+}
+#degree{
+	position:relative;
+	margin:15px 15px 0px 0px;
+	float:right;
+	min-height: none;
+	display:inline-block;
+}
+#clothing{
+	width: 200px;
+	color: white;
+}
+.smpic{
+	float:right;
+	max-width:75px;
+}
