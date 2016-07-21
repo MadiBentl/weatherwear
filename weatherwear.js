@@ -82,62 +82,78 @@ $(document).ready(function() {
 	  pickBody(temp, cond);
 	  pickLegs(temp);
 	  $('#clothing').append('<img src = "images/m_feet_shoes.png">');
+	  $('#weatherdetails').append('<h6>Running Shoes</h6>').append('<p>A good pair of running shoes and socks is exactly what you need.</p>');
   }
   function pickHead(temperature, cond){
 	  if (temperature > 10){
 		  if (cond != "clear sky"){
 			 $('#clothing').append('<img src = "images/m_head_hat.png">'); 
+			 $('#weatherdetails').append('<h6>Baseball cap</h6>').append('<p>Protect yourself from the elements with a hat that has a brim, or even a visor!</p>');
 		  }
 		  else{
-			 $('#clothing').append('<img src = "images/m_head_bare_sunglasses.png">'); 
+			 $('#clothing').append('<img src = "images/m_head_bare_sunglasses.png">');
+			 $('#weatherdetails').append('<h6>Sunglasses</h6>').append('<p>It looks bright out there! Protect yourself from harmful UV rays with a pair of sports sunglasses</p>');
 		  }
 	  }
 	  else{
 		  if (cond != "clear sky"){
-			 $('#clothing').append('<img src = "images/m_head_wintercap.png">'); 
+			 $('#clothing').append('<img src = "images/m_head_wintercap.png">');
+			 $('#weatherdetails').append('<h6>Toque</h6>').append('<p>Stay warm with a winter cap - look for one that covers your ears for ultimate protection</p>'); 
 		  }
 		  else{
-			 $('#clothing').append('<img src = "images/m_head_wintercap_sunglasses.png">'); 
+			 $('#clothing').append('<img src = "images/m_head_wintercap_sunglasses.png">');
+			 $('#weatherdetails').append('<h6>Toque & Sunglasses</h6>').append('<p>Protect your eyes from UV rays with a pair of sunnies and grab a warm hat for your head</p>'); 
 		  }
 	  }
   }
   function pickBody(temperature, cond){
 	  if (temperature > 30){
 		  $('#clothing').append('<img src = "images/m_torso_bare.png">');
+		  $('#weatherdetails').append('<h6>Shirtless</h6>').append('<p>With this kind of heat, why wear a shirt?</p>');
 	  }
 	  else if (temperature > 25){
 		  $('#clothing').append('<img src = "images/m_torso_singlet.png">');
+		  $('#weatherdetails').append('<h6>Singlet</h6>').append('<p>Throw on a tanktop to let your arms breathe.</p>');
 	  }
 	  else if (temperature > 20){
 		  $('#clothing').append('<img src = "images/m_torso_ss.png">');
+		  $('#weatherdetails').append('<h6>Short-Sleeved Shirt</h6>').append('<p>A short-sleeved tee in a good technical fabric is perfect for this kind of weather!</p>');
 	  }
 	  else if (temperature > 10){
 		  if (cond != "clear sky"){
-			 $('#clothing').append('<img src = "images/m_torso_ls.png">'); 
+			 $('#clothing').append('<img src = "images/m_torso_ls.png">');
+			 $('#weatherdetails').append('<h6>Long-Sleeved Shirt</h6>').append('<p>A long-sleeved tee in a technical fabric is a good bet for today.</p>'); 
 		  }
 		  else{
-			 $('#clothing').append('<img src = "images/m_torso_ss.png">'); 
+			 $('#clothing').append('<img src = "images/m_torso_ss.png">');
+			 $('#weatherdetails').append('<h6>Short-Sleeved Shirt</h6>').append('<p>A short-sleeved tee in a good technical fabric is perfect for this kind of weather!</p>'); 
 		  }
 	  }
 	  else if (temperature > 0){
 		  if (cond != "clear sky"){
-			 $('#clothing').append('<img src = "images/m_torso_lightjacket.png">'); 
+			 $('#clothing').append('<img src = "images/m_torso_lightjacket.png">');
+			 $('#weatherdetails').append('<h6>Light Jacket</h6>').append('<p>It looks pretty chilly and cold out there - grab yourself a light jacket to protect against the elements.</p>'); 
 		  }
 		  else{
-			 $('#clothing').append('<img src = "images/m_torso_lsgloves.png">'); 
+			 $('#clothing').append('<img src = "images/m_torso_lsgloves.png">');
+			 $('#weatherdetails').append('<h6>Gloves</h6>').append('<p>A pair of light gloves is exactly what you need</p>');
+			 $('#weatherdetails').append('<h6>Long-Sleeved Shirt</h6>').append('<p>Stay warm is a light-weight long-sleeved tee in a spandex-blend</p>'); 
 		  }
 
 	  }
 	  else{
 		  $('#clothing').append('<img src = "images/m_torso_heavyjacket.png">');
+		  $('#weatherdetails').append('<h6>Heavy Jacket</h6>').append('<p>Dress as warm as you can in your toastiest padded jacket in a high-performance fabric built for running.</p>');
 	  }
   }
   function pickLegs(temperature){
 	  if (temperature > 15){
 		  $('#clothing').append('<img src = "images/m_legs_shorts.png">');
+		  $('#weatherdetails').append('<h6>Shorts</h6>').append('<p>Wear a pair of shorts, you will not regret it!</p>');
 	  }
 	  else{
 		  $('#clothing').append('<img src = "images/m_legs_tights.png">');
+		  $('#weatherdetails').append('<h6>Leggings</h6>').append('<p>Keep your legs covered to protect against the cold</p>');
 	  }
   }
 
