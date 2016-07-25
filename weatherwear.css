@@ -63,7 +63,7 @@ header div{
 	background-color: white;
 	border: white 5px solid;
 	border-radius: 5px;
-	<!-- display: -webkit-flex; -->
+	overflow: hidden;
 }
 .smpic{
 	float:right;

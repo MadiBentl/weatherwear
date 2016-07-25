@@ -81,6 +81,11 @@ $(document).ready(function() {
 	  pickHead(temp, cond);
 	  pickBody(temp, cond);
 	  pickLegs(temp);
+	  addShoes();
+  }
+  function addShoes(){
+	  $('#clothing').append('<img src = "images/m_feet_shoes.png">');
+	  $('#descr').append('<h4>Running Shoes</h4>').append('<p>A good pair of running shoes and socks is exactly what you need.</p>');
   }
   function pickHead(temperature, cond){
 	  if (temperature > 10){
@@ -153,8 +158,7 @@ $(document).ready(function() {
 		  $('#clothing').append('<img src = "images/m_legs_tights.png">');
 		  $('#descr').append('<h4>Leggings</h4>').append('<p>Keep your legs covered to protect against the cold</p>');
 	  }
-	  $('#clothing').append('<img src = "images/m_feet_shoes.png">');
-	  $('#weatherdetails').append('<h4>Running Shoes</h4>').append('<p>A good pair of running shoes and socks is exactly what you need.</p>');
+	  
   }
 
 });
