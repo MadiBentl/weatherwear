@@ -1,5 +1,6 @@
 *{
 	font-family: Lato, sans-serif;
+	color: #210070;
 }
 div{
 	border: grey dotted 1px;
@@ -40,7 +41,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6, p{
-	color:#08176a;
+	color:#4344a1;
 }
 header div{
 	display:inline;
