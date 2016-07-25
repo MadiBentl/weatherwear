@@ -53,7 +53,8 @@ header div{
 	display:inline-block;
 }
 #clothing{
-	width: 200px;
+	float:left;
+	max-width: 200px;
 	color: white;
 	border: 15px solid white;
 	border-radius: 5px;
@@ -74,6 +75,11 @@ header div{
 @media only screen and (max-device-width : 480px){
 	#content{
 		margin:0px;
+	}
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 850px){
+	#content{
+		margin:0px 20px;
 	}
 }
 @media (min-width: 480px){
