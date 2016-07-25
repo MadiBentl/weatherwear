@@ -2,9 +2,6 @@
 	font-family: Lato, sans-serif;
 	color: #210070;
 }
-div{
-	border: grey dotted 1px;
-}
 #details div{
   display:block !important;
 }
@@ -55,10 +52,10 @@ header div{
 }
 #clothing{
 	float:left;
-	max-width: 200px;
 	color: white;
 	border: 15px solid white;
 	border-radius: 5px;
+	width: 200px;
 }
 #content{
 	background-color: white;
@@ -66,10 +63,7 @@ header div{
 	border-radius: 5px;
 	overflow: hidden;
 }
-.smpic{
-	float:right;
-	max-width:75px;
-}
+
 <!-- CSS media query within a stylesheet -->
 
 
@@ -77,14 +71,19 @@ header div{
 	#content{
 		margin:0px;
 	}
+
 }
 @media only screen and (min-device-width : 481px) and (max-device-width : 850px){
 	#content{
 		margin:0px 20px;
 	}
+	
 }
-@media (min-width: 480px){
+@media (min-width: 850px){
 	#content{
 		margin:0px 100px;
+	}
+	#descr{
+	display:block;
 	}
 }
