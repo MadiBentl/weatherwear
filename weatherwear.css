@@ -24,10 +24,10 @@
 }
 body{
   background: blue; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #210070, #5ad8f8); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #210070, #5ad8f8); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #210070, #5ad8f8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #210070, #5ad8f8); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #1f4c83, #bcc0f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #1f4c83, #bcc0f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #1f4c83, #bcc0f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #1f4c83, #bcc0f4); /* Standard syntax */
 }
 h1{
 	color:white !important;
