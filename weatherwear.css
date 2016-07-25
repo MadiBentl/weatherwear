@@ -11,7 +11,6 @@ div{
   display:inline-block;
 }
 #weatherdetails{
-	float:right;
 	background-color:white;
 	border: 15px solid white;
 	border-radius: 5px;
@@ -23,7 +22,6 @@ div{
 .location{
   font-size: 26px;
   display: block !important;
-  max-width: 400px !important;
   margin: auto;
 }
 body{
@@ -36,21 +34,20 @@ body{
 h1{
 	color:white !important;
 	letter-spacing: 4px;
+	font-weight: 200;
 	font-size:3.6em;
 	font-family: Lobster, cursive;
 }
 
-h1, h2, h3, h4, h5{
-	font-weight: 200;
-	color:white;
+h2, h3, h4, h5, h6, p{
+	color:#08176a;
 }
 header div{
 	display:inline;
 }
 #degree{
 	position:relative;
-
-	margin:15px 15px 0px 0px;
+	margin: auto;
 	float:right;
 	min-height: none;
 	display:inline-block;
@@ -58,18 +55,29 @@ header div{
 #clothing{
 	width: 200px;
 	color: white;
-	float: left;
 	border: 15px solid white;
 	border-radius: 5px;
 }
 #content{
-	margin: 0px 100px;
 	background-color: white;
 	border: white 5px solid;
 	border-radius: 5px;
-	height: 380px;
+	<!-- display: -webkit-flex; -->
 }
 .smpic{
 	float:right;
 	max-width:75px;
+}
+<!-- CSS media query within a stylesheet -->
+
+
+@media only screen and (max-device-width : 480px){
+	#content{
+		margin:0px;
+	}
+}
+@media (min-width: 480px){
+	#content{
+		margin:0px 100px;
+	}
 }
